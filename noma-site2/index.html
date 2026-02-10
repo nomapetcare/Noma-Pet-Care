@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NOMA Pet Care | Cuidado que acompanha. Presença que tranquiliza</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --verde-escuro: #2f4f4a; /* ajustável para o tom do logo */
+      --verde-secundario: #3f6b63;
+      --off-white: #f4f6f5;
+      --branco: #ffffff;
+      --cinza-texto: #2e2e2e;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: var(--off-white);
+      color: var(--cinza-texto);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--verde-escuro);
+      padding: 20px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .header-container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo img {
+      height: 42px;
+    }
+
+    .logo span {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--branco);
+    }
+
+    nav a {
+      margin-left: 24px;
+      text-decoration: none;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      color: var(--branco);
+    }
+
+    nav a.button {
+      padding: 10px 18px;
+      background-color: var(--branco);
+      color: var(--verde-escuro);
+      border-radius: 6px;
+      font-weight: 600;
+    }
+
+    section {
+      padding: 80px 40px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Montserrat', sans-serif;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 42px;
+      color: var(--branco);
+    }
+
+    h2 {
+      font-size: 32px;
+      color: var(--verde-escuro);
+    }
+
+    .hero {
+      background-color: var(--verde-escuro);
+      color: var(--branco);
+      text-align: center;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: 20px auto 40px;
+      font-size: 18px;
+    }
+
+    .hero .cta {
+      display: inline-block;
+      background-color: var(--branco);
+      color: var(--verde-escuro);
+      padding: 14px 30px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background-color: var(--branco);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    }
+
+    .card h3 {
+      color: var(--verde-escuro);
+      margin-bottom: 12px;
+    }
+
+    .dark-section {
+      background-color: var(--verde-secundario);
+      color: var(--branco);
+    }
+
+    .dark-section h2 {
+      color: var(--branco);
+    }
+
+    .dark-section .card {
+      background-color: transparent;
+      border: 1px solid rgba(255,255,255,0.3);
+      color: var(--branco);
+    }
+
+    footer {
+      background-color: var(--verde-escuro);
+      color: var(--branco);
+      padding: 40px;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 14px;
+      opacity: 0.8;
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 34px; }
+      h2 { font-size: 26px; }
+      header { padding: 16px 24px; }
+      nav a { margin-left: 16px; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="header-container">
+    <div class="logo">
+      <!-- Substitua logo.png pelo arquivo final -->
+      <img src="logo.png" alt="NOMA Pet Care">
+      <span>NOMA</span>
+    </div>
+    <nav>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#parceiros">Seja parceiro</a>
+      <a class="button" href="https://wa.me/5511947073559" target="_blank">WhatsApp</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>NOMA. Cuidado que acompanha.<br>Presença que tranquiliza.</h1>
+    <p>
+      A NOMA Pet Care conecta tutores exigentes a profissionais confiáveis, criando uma rede onde cuidado, presença e responsabilidade caminham juntos.
+      Aqui, seu pet nunca é apenas mais um atendimento — ele é acompanhado com atenção, rotina e respeito.
+    </p>
+    <a href="https://wa.me/5511947073559" class="cta">Falar com a NOMA</a>
+  </div>
+</section>
+
+<section id="como-funciona">
+  <div class="container">
+    <h2>Como funciona</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>1. Você nos chama</h3>
+        <p>Entendemos a rotina, o perfil do pet e o tipo de cuidado necessário.</p>
+      </div>
+      <div class="card">
+        <h3>2. Conectamos ao profissional ideal</h3>
+        <p>Selecionamos parceiros alinhados com responsabilidade, experiência e empatia.</p>
+      </div>
+      <div class="card">
+        <h3>3. Acompanhamento real</h3>
+        <p>A NOMA acompanha o processo para garantir tranquilidade antes, durante e depois.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="servicos" class="dark-section">
+  <div class="container">
+    <h2>Nossos serviços</h2>
+    <div class="grid">
+      <div class="card"><h3>Passeio Pet</h3><p>Rotinas de passeio pensadas para bem-estar físico e mental.</p></div>
+      <div class="card"><h3>Pet Sitter</h3><p>Cuidado no ambiente do pet, mantendo hábitos e segurança.</p></div>
+      <div class="card"><h3>Hospedagem domiciliar</h3><p>Ambiente familiar, atenção constante e conforto.</p></div>
+      <div class="card"><h3>Cuidados especiais</h3><p>Administração de medicamentos, pets idosos ou com necessidades específicas.</p></div>
+      <div class="card"><h3>Serviços complementares</h3><p>Banho, transporte, acompanhamento veterinário e suporte pós-atendimento.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="parceiros">
+  <div class="container">
+    <h2>Seja parceiro NOMA</h2>
+    <p style="max-width:700px; margin-bottom:40px;">
+      A NOMA nasce para profissionais que levam o cuidado animal a sério.
+      Organizamos demanda, valorizamos seu trabalho e respeitamos sua autonomia.
+    </p>
+    <div class="grid">
+      <div class="card"><h3>Agenda organizada</h3><p>Menos tempo buscando clientes, mais tempo cuidando.</p></div>
+      <div class="card"><h3>Clientes qualificados</h3><p>Tutores que valorizam responsabilidade e continuidade.</p></div>
+      <div class="card"><h3>Transparência</h3><p>Valores claros, comunicação aberta e respeito profissional.</p></div>
+    </div>
+    
+  <section class="hero">
+  <div class="container" style="margin-top:40px; text-align:center;">
+    <a href="https://wa.me/5511947073559" class="cta">Quero ser parceiro</a>
+  </div>
+</section>
+
+<footer>
+  <p>NOMA Pet Care © 2026 — Cuidado que acompanha. Presença que tranquiliza.</p>
+</footer>
+
+</body>
+</html>
